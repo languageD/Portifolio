@@ -1,3 +1,8 @@
 #portifolio
 
-Olá, estou começando meu portifolio ")
+##icones
+
+:package:nova funcionalidade
+'up':atualização
+'beatle':correção de bug
+'checkered_flag': release
