@@ -1,8 +1,8 @@
 #portifolio
+Fazendo algumas coisa novas no meu portifolio ")
 
 ##icones
-
-:package::nova funcionalidade;
+:package::nova funcionalidade
 :up::atualização
-:beetle::correção de bug
+:bug::correção de bug
 :checkered_flag:: release
