@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
 * {
@@ -8,7 +10,9 @@
   text-decoration: none;
 }
 :root {
-  --fonte: 'Ubuntu', sans-serif;
+  --fontPrimary: 'Ubuntu', sans-serif;
+  --fontSegundary: 'Source Sans Pro', sans-serif;
+  --fontTertiary: 'Bitter', serif;
   --colorPrimary: #552564;
 }
 
@@ -80,7 +84,7 @@ header {
 }
 
 .banner h1 {
-  font-family: var(--fonte);
+  font-family: var(--fontPrimary);
   font-size: 4rem;
   text-shadow: 3px 3px 3px black;
   margin-bottom: 1rem;
@@ -89,7 +93,7 @@ header {
 }
 
 .banner p {
-  font-family: var(--fonte);
+  font-family: var(--fontTertiary);
   font-weight: 400;
   font-size: 1.5rem;
   text-shadow: 1px 2px 3px black;
@@ -99,6 +103,7 @@ header {
 }
 
 .banner button {
+  font-family: var(--fontSegundary);
   background: #ff0099;
   background: -webkit-linear-gradient(to right, #552564, #c91681);
   background: linear-gradient(to right, #552564, #c91681);
@@ -174,7 +179,7 @@ header {
 
 .sessao-header {
   text-align: center;
-  font-family: var(--fonte);
+  font-family: var(--fontPrimary);
   font-size: 2rem;
   color: rgba(0, 0, 0, 0.849);
   margin-bottom: 3rem;
@@ -190,14 +195,16 @@ header {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
-  font-family: var(--fonte);
+  font-family: var(--fontSegundary);
+  color: rgba(0, 0, 0, 0.849);
 }
 
 .conhecimento-header i {
   font-size: 2rem;
 }
 .conhecimento-text {
-  font-family: var(--fonte);
+  font-weight: 500;
+  font-family: var(--fontTertiary);
   margin-top: 1rem;
 }
 
@@ -234,4 +241,60 @@ header {
 .mini-img_wrapper img {
   object-fit: cover;
   width: 100%;
+}
+
+.Projetos {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+}
+
+.card {
+  position: relative;
+  height: 30rem;
+  width: 20rem;
+}
+.imgCard {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.imgCard img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.card-info {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  color: white;
+  text-shadow: 1px 2px 3px black;
+}
+.card-info h2 {
+  font-family: var(--fontSegundary);
+  font-size: 1.7rem;
+}
+
+.card-info h3 {
+  font-family: var(--fontTertiary);
+  font-size: 1.2rem;
+}
+
+.card-info button {
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background: #ff0099;
+  background: -webkit-linear-gradient(to right, #552564, #c91681);
+  background: linear-gradient(to right, #552564, #c91681);
+  color: white;
+  margin-top: 1.3rem;
 }
