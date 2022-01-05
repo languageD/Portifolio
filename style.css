@@ -268,14 +268,28 @@ header {
   width: 100%;
   border-radius: 10px;
   object-fit: cover;
-  opacity: 0.6;
+  opacity: 0.8;
+  transition: opacity 1s;
 }
+
+.card:hover .imgCard img {
+  opacity: 0.4;
+}
+
 .card-info {
   position: absolute;
   bottom: 0;
   padding: 2rem;
   color: white;
   text-shadow: 1px 2px 3px black;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+}
+
+.card:hover .card-info {
+  opacity: 1;
+  visibility: visible;
 }
 .card-info h2 {
   font-family: var(--fontSegundary);
@@ -285,6 +299,9 @@ header {
 .card-info h3 {
   font-family: var(--fontTertiary);
   font-size: 1.2rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.5rem;
+  color: #eb2c9e;
 }
 
 .card-info button {
@@ -297,4 +314,5 @@ header {
   background: linear-gradient(to right, #552564, #c91681);
   color: white;
   margin-top: 1.3rem;
+  cursor: pointer;
 }
