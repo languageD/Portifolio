@@ -185,6 +185,15 @@ header {
   margin-bottom: 3rem;
 }
 
+.sessao-header hr {
+  height: 0.4rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  background-color: var(--colorPrimary);
+  border: none;
+  margin: 1rem 25%;
+}
+
 .conhecimentos {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
@@ -243,18 +252,43 @@ header {
   width: 100%;
 }
 
+.projetos-header {
+  position: absolute;
+  width: 100%;
+  font-family: var(--fontPrimary);
+  color: rgba(0, 0, 0, 0.849);
+  font-weight: bolder;
+  text-align: center;
+
+  margin: -2rem auto;
+  font-size: 4rem;
+  background-color: rgb(233, 233, 233);
+}
+
+.projetos-header hr {
+  height: 0.4rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: var(--colorPrimary);
+  margin-top: 1rem;
+  margin: 1rem 25%;
+}
+
 .Projetos {
   display: flex;
   height: 100%;
   width: 100%;
   margin-top: 2rem;
   justify-content: space-evenly;
+  background-color: rgb(233, 233, 233);
 }
 
 .card {
   position: relative;
   height: 30rem;
   width: 20rem;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
 }
 .imgCard {
   height: 100%;
@@ -315,4 +349,67 @@ header {
   color: white;
   margin-top: 1.3rem;
   cursor: pointer;
+}
+
+.container-contato {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.795);
+}
+.contatos-wrapper {
+  height: 40rem;
+  width: 60%;
+  display: flex;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+}
+
+.bg-left {
+  background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+    url(imgs/contato.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 35%;
+}
+.bg-right {
+  width: 65%;
+  padding: 1rem 3rem 3rem 3rem;
+  background-color: #eee;
+}
+.bg-right h1 {
+  width: 100%;
+  margin: 1rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: var(--fontTertiary);
+  font-weight: lighter;
+}
+.bg-right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.field-group {
+  position: relative;
+}
+
+.field {
+  background-color: transparent;
+  border: none;
+  width: 20rem;
+  font-size: 1.3rem;
+  font-family: var(--fontTertiary);
+  border-bottom: 2px grey dashed;
+  outline: none;
+  margin: 3rem 0;
+}
+.field-label {
+  position: absolute;
+  font-family: var(--fontTertiary);
+  text-transform: uppercase;
+  top: 2rem;
 }
